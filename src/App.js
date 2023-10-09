@@ -43,7 +43,7 @@ export default function App() {
           initialRouteName='Splash'
         >
           <Stack.Screen name="Splash" component={Splash} />
-          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Login" component={Login} options={{gestureEnabled: false}} />
           <Stack.Screen name="Signup" component={Signup} />
           <Stack.Screen name="EmailSignUp" component={EmailSignUp} />
         </Stack.Navigator>

@@ -27,12 +27,12 @@ import { LogoImageSmall } from '../Components/LogoImage'
 import PatternedBG from '../assets/images/324-ai.svg'
 import Button from '../Shared/Button';
 
+const handleNavigation = (link) => {
+  navigation.navigate(link);
+}
+
 const EmailSignUp = () => {
   const navigation = useNavigation()
-
-  const handleNavigation = (link) => {
-    navigation.navigate(link);
-  }
 
   /* const [userEmailCredential, setUserEmailCredential] = useState({
     email: "",
@@ -49,7 +49,9 @@ const EmailSignUp = () => {
     createUserWithEmailAndPassword(authentication, userEmailCredential, password)
     .then(() => {
       console.log('User account created & signed in!');
-      Alert.alert('User account created & signed in!');
+      
+      navigation.navigate("Login")
+      
       setDoc(doc(database, "users", uid), {
         username: "",
         email: userEmailCredential,
@@ -60,6 +62,7 @@ const EmailSignUp = () => {
     .catch(error => {
       if (error.code === 'auth/email-already-in-use') {
         console.log('That email address is already in use!');
+        navigation.navigate("Login")
       }
   
       if (error.code === 'auth/invalid-email') {
