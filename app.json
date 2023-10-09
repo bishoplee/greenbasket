@@ -1,10 +1,12 @@
 {
   "expo": {
-    "name": "marketday",
-    "slug": "marketday",
+    "name": "GreenBasket",
+    "slug": "GreenBasket",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "primaryColor": "#34C969",
+    "owner": "BlueMatrix Technologies",
+    "icon": "./src/assets/images/green-basket-icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -15,13 +17,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.thebluematrix.greenbasket"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#34C969"
+      },
+      "package": "com.thebluematrix.greenbasket",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"

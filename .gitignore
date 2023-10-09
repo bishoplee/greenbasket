@@ -16,6 +16,9 @@ web-build/
 *.key
 *.mobileprovision
 
+*.zip
+*.mp4
+
 # Metro
 .metro-health-check*
 
@@ -29,6 +32,7 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
 
 # typescript
